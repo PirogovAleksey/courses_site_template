@@ -20,6 +20,7 @@
   --sidebar-width: 280px;
 }
 
+html.dark,
 body.dark {
   --bg: #0c1222;
   --bg-sidebar: #151f32;
@@ -514,6 +515,33 @@ a.lecture-card {
 .lecture-content strong {
   font-weight: 600;
   color: var(--text);
+}
+
+.lecture-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 14px;
+}
+
+.lecture-content th,
+.lecture-content td {
+  padding: 0.75rem;
+  border: 1px solid var(--card-border);
+  text-align: left;
+}
+
+.lecture-content th {
+  background: var(--card);
+  font-weight: 600;
+}
+
+.lecture-content td {
+  text-align: center;
+}
+
+.lecture-content td:first-child {
+  text-align: left;
 }
 
 .lecture-nav-bottom {

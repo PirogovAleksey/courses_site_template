@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Тести з курсу фінансової безпеки та захисту активів.">
+  <meta name="description" content="Тести з курсу безпеки хмарних технологій та розподілених обчислень.">
   <meta name="author" content="Кафедра ТЕІБ, Ужгородський національний університет">
   <meta name="theme-color" content="#0f9e72">
-  <title>Тести — Фінансова Безпека</title>
+  <title>Тести — Безпека хмарних технологій</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </head>
 <body>
 
   <aside>
     <div class="logo">
-      <div class="logo-icon">🛡️</div>
+      <div class="logo-icon">☁️</div>
       <div class="logo-text">
-        Фінансова<br>Безпека
+        Безпека<br>хмарних технологій
         <span>онлайн-курс</span>
       </div>
     </div>
@@ -43,38 +48,20 @@
       <p>Перевірте свої знання після кожної лекції. Для проходження тесту потрібно набрати щонайменше 60% правильних відповідей.</p>
     </div>
 
+    <h2 class="section-title">Модуль 1</h2>
     <div class="tests-list">
 
       <div class="test-card">
         <div class="test-header">
           <div class="test-icon">📝</div>
           <div class="test-info">
-            <h3>Тест 1: Основи фінансової безпеки</h3>
-            <p>До лекції: Вступ до фінансової безпеки</p>
+            <h3>Тест 1: Архітектура NIST</h3>
+            <p>До лекції: Вступ до хмарних обчислень та еталонна архітектура NIST</p>
           </div>
         </div>
         <div class="test-details">
           <span>📋 20 питань</span>
           <span>⏱ 30 хв</span>
-          <span>✅ Мін. 60%</span>
-        </div>
-        <div class="test-result">
-          <div class="test-score">85%</div>
-          <span class="badge badge-done">Пройдено</span>
-        </div>
-      </div>
-
-      <div class="test-card">
-        <div class="test-header">
-          <div class="test-icon">📝</div>
-          <div class="test-info">
-            <h3>Тест 2: Бюджетування</h3>
-            <p>До лекції: Бюджетування та планування</p>
-          </div>
-        </div>
-        <div class="test-details">
-          <span>📋 15 питань</span>
-          <span>⏱ 25 хв</span>
           <span>✅ Мін. 60%</span>
         </div>
         <div class="test-footer">
@@ -86,8 +73,26 @@
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 3: Захист від шахрайства</h3>
-            <p>До лекції: Захист від шахрайства</p>
+            <h3>Тест 2: Стандартизація та ризики</h3>
+            <p>До лекції: Стандартизація та управління ризиками</p>
+          </div>
+        </div>
+        <div class="test-details">
+          <span>📋 20 питань</span>
+          <span>⏱ 30 хв</span>
+          <span>✅ Мін. 60%</span>
+        </div>
+        <div class="test-footer">
+          <span class="btn-test disabled">Спочатку пройдіть лекцію</span>
+        </div>
+      </div>
+
+      <div class="test-card test-locked">
+        <div class="test-header">
+          <div class="test-icon">🔒</div>
+          <div class="test-info">
+            <h3>Тест 3: Zero Trust Architecture</h3>
+            <p>До лекції: Архітектура нульової довіри у хмарі</p>
           </div>
         </div>
         <div class="test-details">
@@ -104,8 +109,8 @@
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 4: Інвестиції та ризики</h3>
-            <p>До лекції: Інвестиції та ризики</p>
+            <h3>Тест 4: Віртуалізація та контейнери</h3>
+            <p>До лекції: Безпека віртуалізації та контейнеризації</p>
           </div>
         </div>
         <div class="test-details">
@@ -122,8 +127,8 @@
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 5: Кібербезпека у фінансах</h3>
-            <p>До лекції: Кібербезпека у фінансах</p>
+            <h3>Тест 5: Serverless Security</h3>
+            <p>До лекції: Безпека безсерверних обчислень</p>
           </div>
         </div>
         <div class="test-details">
@@ -140,8 +145,8 @@
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 6: Страхування та резерви</h3>
-            <p>До лекції: Страхування та резерви</p>
+            <h3>Тест 6: Блокчейн у безпеці</h3>
+            <p>До лекції: Блокчейн у розподілених системах безпеки</p>
           </div>
         </div>
         <div class="test-details">
@@ -154,12 +159,17 @@
         </div>
       </div>
 
+    </div>
+
+    <h2 class="section-title">Модуль 2</h2>
+    <div class="tests-list">
+
       <div class="test-card test-locked">
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 7: Податкова грамотність</h3>
-            <p>До лекції: Податкова грамотність</p>
+            <h3>Тест 7: CSPM</h3>
+            <p>До лекції: Управління станом безпеки та конфігураціями</p>
           </div>
         </div>
         <div class="test-details">
@@ -176,8 +186,80 @@
         <div class="test-header">
           <div class="test-icon">🔒</div>
           <div class="test-info">
-            <h3>Тест 8: Фінансова стратегія</h3>
-            <p>До лекції: Фінансова стратегія</p>
+            <h3>Тест 8: CNAPP та DevSecOps</h3>
+            <p>До лекції: Комплексний захист додатків</p>
+          </div>
+        </div>
+        <div class="test-details">
+          <span>📋 20 питань</span>
+          <span>⏱ 30 хв</span>
+          <span>✅ Мін. 60%</span>
+        </div>
+        <div class="test-footer">
+          <span class="btn-test disabled">Спочатку пройдіть лекцію</span>
+        </div>
+      </div>
+
+      <div class="test-card test-locked">
+        <div class="test-header">
+          <div class="test-icon">🔒</div>
+          <div class="test-info">
+            <h3>Тест 9: ШІ у хмарній безпеці</h3>
+            <p>До лекції: ШІ та машинне навчання в хмарній безпеці</p>
+          </div>
+        </div>
+        <div class="test-details">
+          <span>📋 20 питань</span>
+          <span>⏱ 30 хв</span>
+          <span>✅ Мін. 60%</span>
+        </div>
+        <div class="test-footer">
+          <span class="btn-test disabled">Спочатку пройдіть лекцію</span>
+        </div>
+      </div>
+
+      <div class="test-card test-locked">
+        <div class="test-header">
+          <div class="test-icon">🔒</div>
+          <div class="test-info">
+            <h3>Тест 10: Криптографія у хмарі</h3>
+            <p>До лекції: Захист даних та криптографія у хмарі</p>
+          </div>
+        </div>
+        <div class="test-details">
+          <span>📋 25 питань</span>
+          <span>⏱ 35 хв</span>
+          <span>✅ Мін. 60%</span>
+        </div>
+        <div class="test-footer">
+          <span class="btn-test disabled">Спочатку пройдіть лекцію</span>
+        </div>
+      </div>
+
+      <div class="test-card test-locked">
+        <div class="test-header">
+          <div class="test-icon">🔒</div>
+          <div class="test-info">
+            <h3>Тест 11: Аналіз інцидентів</h3>
+            <p>До лекції: Актуальні загрози та аналіз реальних інцидентів</p>
+          </div>
+        </div>
+        <div class="test-details">
+          <span>📋 20 питань</span>
+          <span>⏱ 30 хв</span>
+          <span>✅ Мін. 60%</span>
+        </div>
+        <div class="test-footer">
+          <span class="btn-test disabled">Спочатку пройдіть лекцію</span>
+        </div>
+      </div>
+
+      <div class="test-card test-locked">
+        <div class="test-header">
+          <div class="test-icon">🔒</div>
+          <div class="test-info">
+            <h3>Тест 12: Стратегія впровадження</h3>
+            <p>До лекції: Ринок хмарної безпеки та стратегія впровадження</p>
           </div>
         </div>
         <div class="test-details">
@@ -200,7 +282,7 @@
           <a href="https://teib.info/" target="_blank" rel="noopener">teib.info</a>
         </div>
         <div class="footer-right">
-          &copy; 2026 Фінансова Безпека
+          &copy; 2026 Безпека хмарних технологій
         </div>
       </div>
     </footer>

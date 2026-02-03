@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Навчальні матеріали з курсу фінансової безпеки та захисту активів.">
+  <meta name="description" content="Навчальні матеріали з курсу безпеки хмарних технологій та розподілених обчислень.">
   <meta name="author" content="Кафедра ТЕІБ, Ужгородський національний університет">
   <meta name="theme-color" content="#0f9e72">
-  <title>Матеріали — Фінансова Безпека</title>
+  <title>Матеріали — Безпека хмарних технологій</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </head>
 <body>
 
   <aside>
     <div class="logo">
-      <div class="logo-icon">🛡️</div>
+      <div class="logo-icon">☁️</div>
       <div class="logo-text">
-        Фінансова<br>Безпека
+        Безпека<br>хмарних технологій
         <span>онлайн-курс</span>
       </div>
     </div>
@@ -40,7 +45,7 @@
   <main>
     <div class="page-header">
       <h1>Навчальні матеріали</h1>
-      <p>Додаткові ресурси для поглибленого вивчення курсу: підручники, презентації, корисні посилання.</p>
+      <p>Додаткові ресурси для поглибленого вивчення курсу: стандарти, документація провайдерів, корисні посилання.</p>
     </div>
 
     <h2 class="section-title">Презентації до лекцій</h2>
@@ -49,7 +54,7 @@
       <a href="slides.html" class="material-item">
         <div class="material-icon">📊</div>
         <div class="material-info">
-          <h3>Слайди: Вступ до фінансової безпеки</h3>
+          <h3>Слайди: Архітектура NIST та моделі хмарних сервісів</h3>
           <p>Презентація до лекції 1</p>
         </div>
         <span class="material-type">HTML</span>
@@ -58,7 +63,7 @@
       <a href="#" class="material-item">
         <div class="material-icon">📊</div>
         <div class="material-info">
-          <h3>Слайди: Бюджетування та планування</h3>
+          <h3>Слайди: ISO/IEC 27017 та управління ризиками</h3>
           <p>Презентація до лекції 2</p>
         </div>
         <span class="material-type">PDF</span>
@@ -67,7 +72,7 @@
       <a href="#" class="material-item">
         <div class="material-icon">📊</div>
         <div class="material-info">
-          <h3>Слайди: Захист від шахрайства</h3>
+          <h3>Слайди: Zero Trust Architecture</h3>
           <p>Презентація до лекції 3</p>
         </div>
         <span class="material-type">PDF</span>
@@ -75,55 +80,96 @@
 
     </div>
 
-    <h2 class="section-title">Рекомендована література</h2>
+    <h2 class="section-title">Стандарти та документація</h2>
     <div class="materials-list">
 
-      <a href="#" class="material-item">
+      <a href="https://csrc.nist.gov/publications/detail/sp/800-145/final" target="_blank" rel="noopener" class="material-item">
         <div class="material-icon">📕</div>
         <div class="material-info">
-          <h3>Основи фінансової грамотності</h3>
-          <p>Підручник, 2024 — базовий курс фінансової грамотності</p>
+          <h3>NIST SP 800-145</h3>
+          <p>The NIST Definition of Cloud Computing</p>
         </div>
-        <span class="material-type">PDF</span>
+        <span class="material-type">Посилання</span>
+      </a>
+
+      <a href="https://csrc.nist.gov/publications/detail/sp/800-207/final" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">📕</div>
+        <div class="material-info">
+          <h3>NIST SP 800-207</h3>
+          <p>Zero Trust Architecture</p>
+        </div>
+        <span class="material-type">Посилання</span>
       </a>
 
       <a href="#" class="material-item">
         <div class="material-icon">📗</div>
         <div class="material-info">
-          <h3>Кібербезпека у фінансовому секторі</h3>
-          <p>Навчальний посібник — захист від цифрових загроз</p>
+          <h3>ISO/IEC 27017:2015</h3>
+          <p>Практичні настанови з безпеки хмарних сервісів</p>
         </div>
         <span class="material-type">PDF</span>
       </a>
 
-      <a href="#" class="material-item">
+      <a href="https://cloudsecurityalliance.org/research/guidance" target="_blank" rel="noopener" class="material-item">
         <div class="material-icon">📘</div>
         <div class="material-info">
-          <h3>Інвестування для початківців</h3>
-          <p>Практичний посібник з основ інвестування</p>
-        </div>
-        <span class="material-type">PDF</span>
-      </a>
-
-    </div>
-
-    <h2 class="section-title">Корисні посилання</h2>
-    <div class="materials-list">
-
-      <a href="https://bank.gov.ua" target="_blank" rel="noopener" class="material-item">
-        <div class="material-icon">🔗</div>
-        <div class="material-info">
-          <h3>Національний банк України</h3>
-          <p>Офіційний сайт — регулятор фінансового ринку</p>
+          <h3>CSA Security Guidance v4</h3>
+          <p>Cloud Security Alliance — керівництво з безпеки</p>
         </div>
         <span class="material-type">Посилання</span>
       </a>
 
-      <a href="https://www.nssmc.gov.ua" target="_blank" rel="noopener" class="material-item">
+    </div>
+
+    <h2 class="section-title">Документація провайдерів</h2>
+    <div class="materials-list">
+
+      <a href="https://docs.aws.amazon.com/security/" target="_blank" rel="noopener" class="material-item">
         <div class="material-icon">🔗</div>
         <div class="material-info">
-          <h3>НКЦПФР</h3>
-          <p>Національна комісія з цінних паперів та фондового ринку</p>
+          <h3>AWS Security Documentation</h3>
+          <p>Офіційна документація з безпеки Amazon Web Services</p>
+        </div>
+        <span class="material-type">Посилання</span>
+      </a>
+
+      <a href="https://cloud.google.com/security" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">🔗</div>
+        <div class="material-info">
+          <h3>Google Cloud Security</h3>
+          <p>Безпека та відповідність Google Cloud Platform</p>
+        </div>
+        <span class="material-type">Посилання</span>
+      </a>
+
+      <a href="https://learn.microsoft.com/en-us/azure/security/" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">🔗</div>
+        <div class="material-info">
+          <h3>Microsoft Azure Security</h3>
+          <p>Документація з безпеки Microsoft Azure</p>
+        </div>
+        <span class="material-type">Посилання</span>
+      </a>
+
+    </div>
+
+    <h2 class="section-title">Корисні ресурси</h2>
+    <div class="materials-list">
+
+      <a href="https://cloudsecurityalliance.org/" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">🔗</div>
+        <div class="material-info">
+          <h3>Cloud Security Alliance (CSA)</h3>
+          <p>Глобальна організація з безпеки хмарних обчислень</p>
+        </div>
+        <span class="material-type">Посилання</span>
+      </a>
+
+      <a href="https://owasp.org/www-project-cloud-security/" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">🔗</div>
+        <div class="material-info">
+          <h3>OWASP Cloud Security</h3>
+          <p>Проєкт OWASP з безпеки хмарних додатків</p>
         </div>
         <span class="material-type">Посилання</span>
       </a>
@@ -133,6 +179,15 @@
         <div class="material-info">
           <h3>CERT-UA</h3>
           <p>Команда реагування на кіберінциденти України</p>
+        </div>
+        <span class="material-type">Посилання</span>
+      </a>
+
+      <a href="https://www.cisecurity.org/cis-benchmarks" target="_blank" rel="noopener" class="material-item">
+        <div class="material-icon">🔗</div>
+        <div class="material-info">
+          <h3>CIS Benchmarks</h3>
+          <p>Стандарти безпечної конфігурації систем</p>
         </div>
         <span class="material-type">Посилання</span>
       </a>
@@ -147,7 +202,7 @@
           <a href="https://teib.info/" target="_blank" rel="noopener">teib.info</a>
         </div>
         <div class="footer-right">
-          &copy; 2026 Фінансова Безпека
+          &copy; 2026 Безпека хмарних технологій
         </div>
       </div>
     </footer>
